@@ -1,0 +1,222 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  background-color: #222222;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+.mortgage {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.mortgage__container {
+  width: 1600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.mortgage__head {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+.mortgage__box {
+  margin-top: 132px;
+  display: flex;
+  margin-left: -70px;
+}
+.box__item {
+  margin-left: 70px;
+}
+.mortgage__banks-list {
+  margin-top: 50px;
+}
+.mortgage__banks-item {
+  width: 400px;
+  padding: 20px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  font-family: 'Mark OT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #222222;
+    cursor: pointer;
+  }
+}
+.mortgage__btn-new-bank {
+  margin-top: 80px;
+  padding: 20px 30px;
+  background-color: #2d9cdb;
+  font-family: 'Mark OT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mortgage__info-box {
+  width: 730px;
+  margin-top: 30px;
+  background-color: #2d2d2d;
+  border-radius: 16px;
+  padding: 20px 30px;
+}
+.mortgage__info-item {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+.info-text {
+  font-family: 'Mark OT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 94px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  transition-property: transform, background-color, opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}
+.modal {
+  padding: 60px 30px;
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  background-color: #2d2d2d;
+  border-radius: 16px;
+}
+.modal .mortgage__title {
+  text-align: center;
+}
+.mortgage__form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.mortgage__form-options {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mark OT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+.mortgage__form-input {
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px 30px;
+  font-family: 'Mark OT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.mortgage__form-submit {
+  display: block;
+  width: 250px;
+  padding: 20px 30px;
+  margin: 30px auto 0 auto;
+  background-color: #2d9cdb;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #ffffff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
