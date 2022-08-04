@@ -100,10 +100,12 @@ function createInfoAboutBank(bank) {
 }
 function openModal() {
   modal.classList.toggle('is-hidden');
+  document.body.style.position = 'fixed';
 }
 function closeModal(event) {
   if (!event.target.classList.contains('backdrop')) {
     return;
   }
   modal.classList.toggle('is-hidden');
+  document.body.style.position = 'static';
 }
